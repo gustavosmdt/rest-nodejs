@@ -1,0 +1,26 @@
+{
+  "name": "rest",
+  "version": "1.0.0",
+  "description": "Praticando nodejs criando uma REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavosmdt/node-pratice.git"
+  },
+  "keywords": [
+    "node",
+    "pratice"
+  ],
+  "author": "Gustavo Schmidt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavosmdt/node-pratice/issues"
+  },
+  "homepage": "https://github.com/gustavosmdt/node-pratice#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
