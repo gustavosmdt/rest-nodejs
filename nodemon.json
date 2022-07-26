@@ -4,6 +4,8 @@
         "MYSQL_PASSWORD": "jackson147.",
         "MYSQL_DATABASE": "comercio",
         "MYSQL_HOST": "localhost",
-        "MYSQL_PORT": "3306"
+        "MYSQL_PORT": "3306",
+
+        "JWT_KEY": "segredo123"
     }
 }
