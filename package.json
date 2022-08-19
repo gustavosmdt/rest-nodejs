@@ -4,8 +4,9 @@
   "description": "Praticando nodejs criando uma REST API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "test": "cucumber-js",
+    "start": "nodemon server.js",
+    "pactum-test": "mocha teste.js"
   },
   "repository": {
     "type": "git",
