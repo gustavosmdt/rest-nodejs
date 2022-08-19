@@ -13,7 +13,7 @@ exports.getPedidos = (req, res, next) => {
                     produtos.preco 
                FROM pedidos 
          INNER JOIN produtos 
-                 ON produtos.id_produto = pedidos.id_pedidos;`,
+                 ON produtos.id_produto = pedidos.id_produto;`,
             (error, result, field) => {
                 if (error) {
                     return res.status(500).send({ error: error })
