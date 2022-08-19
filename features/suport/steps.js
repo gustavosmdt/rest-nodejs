@@ -8,19 +8,13 @@ Before(() => {
     spec = pactum.spec();
 });
 
-Given(/^I log in a POST request to (.*)$/, async (endpoint) => {
-
-    var token = await spec.post(endpoint)
+Given(/^I log in a POST request to (.*)$/, (endpoint) => {
+    spec.post(endpoint)
         .withBody({
             "email": "gustavo@foo.com",
             "senha": "gustavo123"
         })
-        .returns('token');
-
-        handler.addDataFuncHandler('getAuthToken', () => {
-            return token;
-        });
-
+        .stores('getAuthToken', 'token');
 });
 
 Given(/^I make a (.*) request to (.*)$/, (method, endpoint) => {
@@ -28,7 +22,7 @@ Given(/^I make a (.*) request to (.*)$/, (method, endpoint) => {
 });
 
 Given('I set authentication', () => {
-    spec.withHeaders('Authorization', `Bearer $F{getAuthToken}`);
+    spec.withHeaders('Authorization', `Bearer $S{getAuthToken}`);
 });
 
 Given(/I set body to/, (body) => {
