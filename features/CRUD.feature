@@ -1,4 +1,4 @@
-Feature: RestAPI
+Feature: Login
 
     Scenario: Login
         Given I log in a POST request to /usuarios/login
@@ -73,8 +73,8 @@ Feature: RestAPI
             "id_produto": "$S{getProduct}"
           }
           """
-          When I receive a response
-          Then I expect response should have a status 202
+         When I receive a response
+         Then I expect response should have a status 202
           And I expect response should have a json like
           """
           {
@@ -137,7 +137,7 @@ Feature: RestAPI
           And I set body to
           """
           {
-              "id_pedidos": 
+              "id_pedidos": "$S{getRequest}"
           }
           """
          When I receive a response
