@@ -4,7 +4,7 @@
   "description": "Praticando nodejs criando uma REST API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cucumber-js",
     "start": "nodemon server.js"
   },
   "repository": {
@@ -32,6 +32,9 @@
     "mysql2": "^2.3.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "@cucumber/cucumber": "^8.5.1",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.12",
+    "pactum": "^3.1.14"
   }
 }
