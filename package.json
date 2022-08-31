@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js",
-    "start": "nodemon server.js",
-    "pactum-test": "mocha teste.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +35,6 @@
     "@cucumber/cucumber": "^8.5.1",
     "mocha": "^10.0.0",
     "nodemon": "^2.0.12",
-    "pactum": "^3.1.13"
+    "pactum": "^3.1.14"
   }
 }
